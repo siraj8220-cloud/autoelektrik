@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ВОТ ЭТА СТРОЧКА ВКЛЮЧАЕТ МОБИЛЬНУЮ ВЕРСИЮ НА СМАРТФОНАХ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Автоэлектрик | Цены на услуги</title>
-    <!-- Встроенные адаптивные стили, которые сработают на любом телефоне -->
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -39,7 +39,6 @@
             padding: 0 20px;
         }
         
-        /* СТИЛИ ДЛЯ КАРТОЧЕК ЦЕН */
         .price-list {
             display: flex;
             flex-direction: column;
@@ -87,7 +86,7 @@
             min-width: 110px;
         }
 
-        /* ЖЕСТКАЯ НАСТРОЙКА ДЛЯ МОБИЛЬНЫХ ЭКРАНОВ */
+        /* АДАПТАЦИЯ ДЛЯ ВЕРТИКАЛЬНОГО ЭКРАНА ТЕЛЕФОНА */
         max-width: 768px {
             .price-item { 
                 flex-direction: column !important; 
